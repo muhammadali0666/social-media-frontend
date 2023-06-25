@@ -37,7 +37,7 @@ function Feed() {
   // const [img, setImg] = useState("../../server/img/1683461015443-bg.jpg")
 
   useEffect(() => {
-    fetch("http://localhost:4001/upload/getUpload", {
+    fetch("https://social-media-dp8e.onrender.com/upload/getUpload", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token")
@@ -55,7 +55,7 @@ function Feed() {
 
   const handleUploadLike = async (element) => {
     element.preventDefault()
-    fetch("http://localhost:4001/upload_like", {
+    fetch("https://social-media-dp8e.onrender.com/upload_like", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

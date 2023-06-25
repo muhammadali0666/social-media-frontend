@@ -10,7 +10,7 @@ export const Cover = () => {
   const [imgCover, serImgCover] = useState('assets/post/1.jpg')
 
   useEffect(() => {
-    fetch("http://localhost:4001/upload/get_name", {
+    fetch("https://social-media-dp8e.onrender.com/upload/get_name", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token")
