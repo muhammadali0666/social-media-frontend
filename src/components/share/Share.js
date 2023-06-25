@@ -1,7 +1,7 @@
 import { PermMedia, Label, Room, EmojiEmotions } from "@mui/icons-material"
 import "./Share.css"
 import { useState, useEffect } from "react"
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export default function Share() {
 
@@ -9,7 +9,7 @@ export default function Share() {
     const [imgCover, serImgCover] = useState('assets/post/1.jpg')
 
     useEffect(() => {
-        fetch("http://localhost:4001/upload/get_name", {
+        fetch("https://social-media-dp8e.onrender.com/upload/get_name", {
             method: "GET",
             headers: {
                 token: localStorage.getItem("token")
@@ -41,7 +41,7 @@ export default function Share() {
         })
             .then(response => response.json())
             .then(data => {
-                fetch("http://localhost:4001/upload", {
+                fetch("https://social-media-dp8e.onrender.com/upload", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -67,7 +67,7 @@ export default function Share() {
                         newVal.length && newVal.map((e) => (
                             <div className='users'>
                                 <NavLink to="/profile">
-                                <img className="sidebar_img" width={70} height={70} src={imgCover} />
+                                    <img className="sidebar_img" width={70} height={70} src={imgCover} />
                                 </NavLink>
                             </div>
                         )

@@ -14,7 +14,7 @@ export default function Login() {
       password: password,
     };
 
-    fetch("http://localhost:4001/auth/login", {
+    fetch("https://social-media-dp8e.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

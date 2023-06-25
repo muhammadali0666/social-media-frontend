@@ -11,7 +11,7 @@ function SideBar() {
   const [newVal, setNewVal] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:4001/upload/get_user", {
+    fetch("https://social-media-dp8e.onrender.com/upload/get_user", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token")
@@ -23,7 +23,7 @@ function SideBar() {
 
 
   useEffect(() => {
-    fetch("http://localhost:4001/upload/get_sidebar", {
+    fetch("https://social-media-dp8e.onrender.com/upload/get_sidebar", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token")

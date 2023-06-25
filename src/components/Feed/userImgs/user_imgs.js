@@ -11,7 +11,7 @@ function UserImg() {
   // const [img, setImg] = useState("../../server/img/1683461015443-bg.jpg")
 
   useEffect(() => {
-    fetch("http://localhost:4001/upload/getUploadOne", {
+    fetch("https://social-media-dp8e.onrender.com/upload/getUploadOne", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token")

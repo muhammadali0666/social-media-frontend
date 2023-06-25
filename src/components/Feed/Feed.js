@@ -76,7 +76,7 @@ function Feed() {
   const [dataLength, setDataLength] = useState()
 
   useEffect(() => {
-    fetch("http://localhost:4001/get_like")
+    fetch("https://social-media-dp8e.onrender.com/get_like")
       .then(res => res.json())
       .then(data => setDataLength(data))
   }, [])

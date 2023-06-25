@@ -36,7 +36,7 @@ export const Cover = () => {
     })
       .then(response => response.json())
       .then(data => {
-        fetch("http://localhost:4001/uploadMini", {
+        fetch("https://social-media-dp8e.onrender.com/uploadMini", {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -71,7 +71,7 @@ export const Cover = () => {
     })
       .then(response => response.json())
       .then(mydata => {
-        fetch("http://localhost:4001/uploadCover", {
+        fetch("https://social-media-dp8e.onrender.com/uploadCover", {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

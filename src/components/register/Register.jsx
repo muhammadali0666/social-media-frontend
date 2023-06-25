@@ -18,7 +18,7 @@ export default function Register() {
       password_again: confirmPassword,
     };
 
-     fetch("http://localhost:4001/auth/createRegister", {
+     fetch("https://social-media-dp8e.onrender.com/auth/createRegister", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
