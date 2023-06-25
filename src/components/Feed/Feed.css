@@ -1,0 +1,43 @@
+.feed{
+    flex: 5.5;
+}
+.card_item {
+    padding: 10px;
+    box-shadow: 2px 1px 10px 1px rgba(155,131,131,0.75);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.top_div {
+display: flex;
+align-items: center;
+}
+.list {
+margin-bottom: 15px;
+margin-left: auto;
+}
+.card-time {
+    margin-left: 20px;
+}
+.img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50vh;
+    object-fit: fill;
+}
+.div_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.like-dis {
+    display: flex;
+    align-items: center;
+}
+.like-p {
+    margin-left: 5px;
+}

@@ -1,0 +1,34 @@
+.pro_img {
+  width: 100%;
+  height: 40vh;
+  object-fit: fill;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.pro_img_mini {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.pro-mini-box {
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pro_mini_username {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.pro_mini_des {
+  margin-bottom: 20px;
+}
