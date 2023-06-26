@@ -57,7 +57,7 @@ export const Cover = () => {
       .catch(error => console.log(error))
   };
 
- ////////////////////////////////// COVER
+  ////////////////////////////////// COVER
 
   const handleUploadCover = async (e) => {
     e.preventDefault()
@@ -98,19 +98,21 @@ export const Cover = () => {
         <img className='pro_img' src={imgCover} alt='img' />
       </label>
       <div className='pro-mini-box'>
-        <label htmlFor='simple'>
-          <img className='pro_img_mini' src={img} alt='img' />
-        </label>
         <p className='pro_mini_username'>
           {
             val.length && val.map((e) => (
-              <p>{e.username}</p>
+              <>
+                <label htmlFor='simple'>
+                  <img className='pro_img_mini' src={e.user_img} alt='img' />
+                </label>
+                <p>{e.username}</p>
+              </>
             ))
           }
         </p>
         <p className='pro_mini_des'>Hello my friend <img width='50' src='assets/person/shake-hand.gif' /></p>
         <input id='simple' type='file' style={{ display: "none" }} onChange={(img) => handleUpload(img)} />
-        <input type='file' id='bgcover' style={{ display: "none" }} onChange={(img) => handleUploadCover(img)}/>
+        <input type='file' id='bgcover' style={{ display: "none" }} onChange={(img) => handleUploadCover(img)} />
       </div>
     </div>
   )

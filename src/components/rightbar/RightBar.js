@@ -18,10 +18,7 @@ function RightBar({ profile }) {
       }
     })
       .then(res => res.json())
-      .then(data => {
-        setNewVal(data)
-        // serImgCover(data)
-      })
+      .then(data => console.log(data))
   }, [])
 
 
