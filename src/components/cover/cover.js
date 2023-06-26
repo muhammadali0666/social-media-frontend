@@ -36,7 +36,8 @@ export const Cover = () => {
     })
       .then(response => response.json())
       .then(data => {
-        fetch("https://social-media-dp8e.onrender.com/uploadMini", {
+        console.log(data)
+        fetch("https://social-media-dp8e.onrender.com/upload/uploadMini", {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

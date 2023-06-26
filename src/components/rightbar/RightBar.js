@@ -11,7 +11,7 @@ function RightBar({ profile }) {
   // const [imgCover, serImgCover] = useState('assets/post/1.jpg')
 
   useEffect(() => {
-    fetch("https://social-media-dp8e.onrender.com/get_online", {
+    fetch("https://social-media-dp8e.onrender.com/upload/get_online", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token")
@@ -60,8 +60,8 @@ function RightBar({ profile }) {
         </button>
         <ul className="rightBarFriendList">
           {
-            newVal.length && newVal.map((e) => (
-              <div key={e.id}>
+            newVal.length && newVal.map((e, idx) => (
+              <div key={idx}>
                 {
                   e.onlines === true && <div style={{ display: "flex" }}>
                     <img className="sidebar_img right_img_profile" width={35} height={35} src={e.user_img_mini} />
